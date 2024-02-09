@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="neutral_grey">#C5C7C9</color>
+    <color name="header_color">#F6F6F8</color>
+    <color name="chip_primary_muscle">#E39724</color>
+    <color name="chip_secondary_muscle">#F5D4A2</color>
+    <color name="chip_exercise_other">#AD9571</color>
+    <color name="chip_exercise_category">#E87B8B</color>
+    <color name="chip_exercise_force">#E87BB2</color>
+    <color name="chip_exercise_mechanic">#7BB7E8</color>
+    <color name="chip_exercise_level">#7AE6BA</color>
+    <color name="chip_exercise_equipment">#E6E47A</color>
+    <color name="exercise_selected_step">#DCDEDC</color>
+    <color name="mg_default_color">#70212C</color>
+    <color name="mg_card_background">#FFFFFF</color>
+    <color name="mg_background_color">#FFFFFF</color>
+</resources>

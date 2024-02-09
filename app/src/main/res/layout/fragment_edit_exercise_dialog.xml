@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="New Exercise"/>
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close"/>
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/edit_exercise_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:text="Reps"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Sets"/>
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/add_rest_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:text="Add Rest"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/edit_exercise_ll1"
+            android:orientation="vertical">
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/exercise_reps_picker"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                numberpicker:min="1"
+                numberpicker:max="50"
+                numberpicker:value="10"
+                numberpicker:unit="1"
+                numberpicker:focusable="false" />
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/exercise_sets_picker"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                numberpicker:min="1"
+                numberpicker:max="10"
+                numberpicker:value="1"
+                numberpicker:unit="1"
+                numberpicker:focusable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_add_button"
+            android:layout_alignParentRight="true"
+            android:text="Create"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_program_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mg_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mg_background_color"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/program_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/create_program_edit_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="24dp"
+            android:text="Edit" />
+
+        <TextView
+            android:id="@+id/create_program_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="24dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_program_view"
+            android:layout_width="match_parent"
+            android:background="@color/mg_background_color"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/add_button_content"/>
+        <RelativeLayout
+            android:id="@+id/add_button_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:background="@color/mg_background_color">
+            <Button
+                android:id="@+id/create_exercise_add_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="Add Exercise" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

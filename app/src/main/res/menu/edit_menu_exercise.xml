@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_item"
+        app:showAsAction="always"
+        android:icon="@drawable/edit_icon"
+        android:title="Edit"
+        android:visible="true"/>
+    <item
+        android:title="Insert"
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/add_exercise_item"
+                app:showAsAction="always"
+                android:title="Exercise"
+                android:visible="true"/>
+            <item
+                android:id="@+id/add_rest_item"
+                app:showAsAction="always"
+                android:title="Rest"
+                android:visible="true"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/delete_item"
+        app:showAsAction="always"
+        android:icon="@drawable/delete"
+        android:title="Delete"
+        android:visible="true"/>
+</menu>

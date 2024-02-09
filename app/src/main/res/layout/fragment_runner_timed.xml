@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/exercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp" />
+        <ImageSwitcher
+            android:id="@+id/exercise_image_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/exercise_name"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/timed_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:trackThickness="15dp"
+                    app:indicatorSize="140dp"
+                    android:progress="0"/>
+
+                <TextView
+                    android:id="@+id/exercise_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textSize="45sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View style="@style/Divider"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise tips"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/exercise_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
